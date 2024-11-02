@@ -6,6 +6,7 @@ services:
     environment:
       TZ: "Europe/London"
       WEBPASSWORD: ""
+      WEB_PORT: 8180
     volumes:
       - "/home/docker/pihole/etc/pihole:/etc/pihole"
       - "/home/docker/pihole/etc/dnsmasq:/etc/dnsmasq"
