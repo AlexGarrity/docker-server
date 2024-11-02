@@ -1,0 +1,10 @@
+services:
+  unbound:
+    container_name: unbound
+    image: klutchell/unbound
+    restart: unless-stopped
+    ports:
+      - "5335:5335/udp"
+      - "5335:5335/tcp"
+    volumes:
+      - "/home/docker/unbound/etc/unbound:/etc/unbound"

@@ -1,0 +1,12 @@
+services:
+  factorio:
+    container_name: factorio
+    image: factoriotools/factorio
+    restart: unless-stopped
+    environment:
+      LOAD_LATEST_SAVE: false
+      SAVE_NAME: "freeplay-spaceage"
+    ports:
+      - "34197:34197/udp"
+    volumes:
+      - "/home/docker/factorio/factorio:/factorio"
