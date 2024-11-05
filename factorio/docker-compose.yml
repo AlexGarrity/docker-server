@@ -1,7 +1,8 @@
 services:
   factorio:
+
     container_name: factorio
-    image: factoriotools/factorio
+    image: factoriotools/factorio:stable
     restart: unless-stopped
     environment:
       LOAD_LATEST_SAVE: false
